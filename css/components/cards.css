@@ -1,0 +1,36 @@
+.card{
+  flex-basis: 250px;
+	flex-grow: 1;
+	margin: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: white; /* White background for cards */
+    border: 1px solid #e0e0e0; /* Light gray border */
+	border-radius: 5px; /* Rounded corners */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    padding: 30px; 
+    margin-bottom: 20px; /* Space between cards */
+}
+
+.card:hover {
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2); /* Darker shadow on hover */
+    transition: box-shadow 0.3s ease; /* Smooth transition effect */
+}
+
+.card:nth-child(odd) {
+    background-color: #fafafa; /* Light gray for odd cards */
+}
+
+.card img {
+  width: 150px;
+}
+.card h3 {
+  flex-grow: 1;
+  padding-left: 20px;
+}
+
+.cards {
+  display: flex;
+	flex-wrap: wrap;
+}
